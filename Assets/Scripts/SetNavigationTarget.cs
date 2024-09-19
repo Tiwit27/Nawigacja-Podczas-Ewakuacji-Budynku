@@ -14,6 +14,7 @@ public class SetNavigationTarget : MonoBehaviour
 
     private NavMeshPath navMeshPath;
     private LineRenderer lineRenderer;
+    Vector3 startPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class SetNavigationTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(startPosition);
         NavMesh.CalculatePath(transform.position, navTargetObj.transform.position, NavMesh.AllAreas, navMeshPath);
         lineRenderer.positionCount = navMeshPath.corners.Length;
         lineRenderer.SetPositions(navMeshPath.corners);
