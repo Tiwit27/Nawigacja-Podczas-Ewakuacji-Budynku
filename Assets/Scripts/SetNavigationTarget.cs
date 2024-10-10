@@ -28,7 +28,7 @@ public class SetNavigationTarget : MonoBehaviour
         Input.compass.enabled = true;
         navMeshPath = new NavMeshPath();
         lineRenderer = transform.GetComponent<LineRenderer>();
-        //SetFirstPosition(1);
+        SetFirstPosition(0);
     }
 
     public void SetFirstPosition(int id)
