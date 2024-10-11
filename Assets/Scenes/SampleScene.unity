@@ -154,11 +154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   table:
   - id: 0
-    location: {x: 27.87, y: 1, z: -13.54}
+    location: {x: 27.87, y: 1, z: -12.3}
     rotation: 0
   - id: 1
-    location: {x: 1.64, y: 1, z: -5.38}
-    rotation: 0
+    location: {x: 35.51, y: 1, z: -12.58}
+    rotation: 90
   - id: 2
     location: {x: -3.78, y: 1, z: -5.38}
     rotation: 0
@@ -474,7 +474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691010991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.87, y: 1, z: -13.54}
+  m_LocalPosition: {x: 35.51, y: 1, z: -12.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1554,7 +1554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602754752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.87, y: 1, z: -13.54}
+  m_LocalPosition: {x: 35.51, y: 1, z: -12.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1607,7 +1607,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.12666667
+  m_VoxelSize: 0.05
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: ac56f53114cec8940a3a57bdebce2bc5, type: 2}
   m_BuildHeightMesh: 0

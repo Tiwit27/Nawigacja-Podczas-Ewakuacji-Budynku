@@ -28,7 +28,7 @@ public class SetNavigationTarget : MonoBehaviour
         Input.compass.enabled = true;
         navMeshPath = new NavMeshPath();
         lineRenderer = transform.GetComponent<LineRenderer>();
-        SetFirstPosition(0);
+        //SetFirstPosition(1);
     }
 
     public void SetFirstPosition(int id)
@@ -37,6 +37,7 @@ public class SetNavigationTarget : MonoBehaviour
         //arSession.transform.position = db.table[id].location;
         //xrOrigin.transform.position = db.table[id].location;
         user.transform.position = db.table[id].location;
+        user.transform.rotation = Quaternion.Euler(0, db.table[id].rotation, 0);
         NavMesh.CalculatePath(db.table[id].location, navTargetObj.transform.position, NavMesh.AllAreas, navMeshPath);
         lineRenderer.positionCount = navMeshPath.corners.Length;
         lineRenderer.SetPositions(navMeshPath.corners);
