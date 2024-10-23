@@ -28,7 +28,7 @@ public class SetNavigationTarget : MonoBehaviour
         Input.compass.enabled = true;
         navMeshPath = new NavMeshPath();
         lineRenderer = transform.GetComponent<LineRenderer>();
-        SetFirstPosition(2);
+        SetFirstPosition(1);
     }
 
     public void SetFirstPosition(int id)
@@ -50,6 +50,7 @@ public class SetNavigationTarget : MonoBehaviour
     {
         if (nfc.tagFound == true)
         {
+
             NavMesh.CalculatePath(transform.position, navTargetObj.transform.position, NavMesh.AllAreas, navMeshPath);
             lineRenderer.positionCount = navMeshPath.corners.Length;
             lineRenderer.SetPositions(navMeshPath.corners);
