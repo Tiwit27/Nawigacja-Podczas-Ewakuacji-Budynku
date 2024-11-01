@@ -37,9 +37,14 @@ public class NFC : MonoBehaviour
                 string text = System.Text.Encoding.UTF8.GetString(payLoad);
                 text = text.Substring(3);
                 tagID = int.Parse(text);
-                NFCStatus.text = text;
-                snt.SetFirstPosition(tagID);
+                NFCStatus.text = "Oddal telefon o 30 cm od œciany nie obracaj¹c go";
+                StartCoroutine(CallMethodSetFirstPosition());
             }
         }
+    }
+    IEnumerator CallMethodSetFirstPosition()
+    {
+        yield return new WaitForSeconds(5);
+        snt.SetFirstPosition(tagID);
     }
 }
